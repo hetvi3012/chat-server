@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "com.auxia.chat.grpc";
+message ChatMessage{
+  string sender = 1;
+  string content = 2;
+  string timestamp = 3;
+}
+
+service ChatService{
+  rpc joinChat(stream ChatMessage) returns (stream ChatMessage);
+}

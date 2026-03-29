@@ -32,6 +32,9 @@ dependencies {
 	implementation("io.grpc:grpc-kotlin-stub:1.4.1")
 	implementation("io.grpc:grpc-protobuf:1.62.2")
 	implementation("com.google.protobuf:protobuf-kotlin:3.25.3")
+	// Required for gRPC streams to use Kotlin Coroutines
+	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+	implementation("net.devh:grpc-server-spring-boot-starter:3.1.0.RELEASE")
 }
 
 kotlin {
