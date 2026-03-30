@@ -37,7 +37,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 ```bash
 git clone [https://github.com/hetvi3012/chat-server.git](https://github.com/hetvi3012/chat-server.git)
-cd YourRepoName
+cd chat-server
 ./gradlew build
 ```
 ## 🏃‍♂️ Running the Application
